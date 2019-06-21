@@ -1,0 +1,10 @@
+version: '3'
+services:
+  tao-core:
+    container_name: tao-core
+    image: ubuntu:xenial
+    command: /usr/bin/supervisord    
+    restart: always
+    build: .
+    ports:
+      - 15151
